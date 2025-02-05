@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+ 
+ .bartag{
+ 
+  padding-top: 1%;
+  padding-left: 2px;
+  display: flex;
+  background-color: #fff5;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  justify-content: space-between;
+ }
+ .bartag img{
+  border-radius: 100%;
+ }
+ .bartag ul{
+   display: flex;
+   justify-content:space-around;
+ }
+ .bartag ul li{
+   margin: 10px;
+ }
+ .container{
+   background-image: url(https://th.bing.com/th/id/OIP.phuA_XgMCmOEGf4aVw5tZAHaEJ?w=314&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7);
+   background-size: cover;
+   height: 100%;
+   width: 100%;
+   border-radius: 10px;
+
+ }
+ .bartag ul li{
+   list-style: none;
+   display: inline-block;
+   margin: 0 20px;
+}
+.bartag ul li a{
+   text-decoration: none;
+   color:#070504;
+   padding: 5px;
+   font-size: 12px;
+}
+.bartag ul li a:hover{
+   color: aliceblue;
+   background-color: #353839;
+   border-radius: 5px;
+
+}
+.logo{
+  display: flex;
+  padding-top: -2%;
+}
+.logo p{
+  text-align: center;
+  font-size: large;
+  text-decoration: overline;
+}
+nav ul li.active a {
+  color: aliceblue;
+  background-color: #353839; 
+  border-radius: 5px;
+}
+.header_button{
+  padding-right: 4px;
+}
+.header_button button{
+  background-color: rgb(16, 92, 190);
+  font-size: 14px;
+  padding: 7px;
+  border: none;
+  border-radius: 40px;
+  color: aliceblue;
+  text-decoration: none;
+  
+}
+#main{
+  text-align: center;
+  padding: 250px 100px;
+  color:rgb(12, 54, 47);
+  
+}
+#main h1{
+    color: #000;
+    font-size:40px;
+}
+.main2 button{
+  padding: 10px;
+  border-radius: 70px;
+  border:none;
+  background-color: white; 
+  padding-left: 50px;
+  padding-right: 50px;
+  font-family: cursive;
+}
+.main2{
+
+ margin-top: 17px;
+}
+#my-button{
+  background-color:white;
+  color: #353839;
+}
+.main3{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5%;
+  padding-bottom: 5%;
+
+}
+.interior{
+    padding-top:50px;
+}
+#standard{
+  background-image: url(https://th.bing.com/th/id/OIP.HMMeFNDY6RcbfIItsYQN2gHaE8?w=259&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7);
+  width: 30%;
+  padding-top: 20%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform 0.3s ease;
+}
+#standard button{
+  background-color: #fff5;
+  border:none;
+  cursor:pointer;
+  padding-left: 41.2%;
+  padding-right: 41.2%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 10px;
+}
+#premium{
+  background-image: url(https://th.bing.com/th/id/OIP.AwTxno4ghtZN-401JT9vrQHaE8?w=228&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7);
+  width: 30%;
+  background-size: cover;
+  padding-top: 20%;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform 0.3s ease;
+}
+#premium button{
+  background-color: #fff5;
+  border:none;
+  cursor:pointer;
+  padding-left: 41.8%;
+  padding-right: 41.8%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 10px;
+}
+#luxury{
+  background-image: url(https://th.bing.com/th/id/OIP.3SKKzPj42KoaSEKP5o7fZQHaFI?w=251&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7);
+  width: 30%;
+  padding-top: 20%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform 0.3s ease;
+}
+#luxury button{
+  background-color: #fff5;
+  border:none;
+  cursor:pointer;
+  padding-left: 43.5%;
+  padding-right: 43.5%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 10px;
+}
+.main3  :hover{
+  transform: scale(1.1);
+}
+.carousel{
+  padding-left: 1%;
+}
+.carousel ul{
+  background-color: whitesmoke;
+  padding: 3%;
+  border-radius: 10px;
+  font-size: larger;
+  list-style-type: none;
+  text-align: center;
+  color: #353839;
+  font-size: 14px;
+}
+.CONTECT{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: rgb(252, 241, 227);
+  color: #353839;
+  border-radius: 10px;
+}
+.CONTECT button{
+  width: 30px;
+  height: 30px;
+  margin-right: 5%;
+  
+  border-radius: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.CONTECT button img{
+  border-radius: 100%;
+}
+footer{
+  text-align: center;
+  background-color: #fff5;
+  padding-top: 5%;
+  padding-bottom: 1%;
+}
+.contact-head{
+  background-image: url(https://th.bing.com/th/id/OIP.KMBrPUXXuQo48j_9O5e_CAHaD5?w=325&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7);
+  padding-top: 25%;
+  padding-bottom: 15%;
+  font-size: 18px;
+  padding-left: 2%;
+  background-size: cover;
+  border-radius: 10px;
+  background-position: center;
+  color:rgb(1, 7, 12)
+}
+.contact-head h1{
+  margin-right: 70%;
+}
+.content{
+  display: grid;
+  grid-template-columns: 50% 2fr;
+  justify-content: space-around;
+  padding-top: 3%;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  margin-bottom: 1%;
+  padding-bottom: 1%;
+}
+.contect h1{
+  text-align: center;
+}
+.content img{
+  width: 10%;
+  border-radius: 100%;
+}

@@ -4,182 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="navbar">
-        <div class="navbar-start ">
-          <div class="dropdown">
-           
-           
-          <a className="btn">Design <br />Your Home</a>
-        </div>
-        <div class="navbar-center">
-          <ul class="menu">
-            <li><a>Home</a></li>
-            <li>
-              <details>
-                <summary>Design Ideas</summary>
-                <ul>
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </details>
-            </li>
-            <li>
-              <details>
-                <summary>Price Calculators</summary>
-                <ul>
-                  <li><a>Submenu 1</a></li>
-                  <li><a>Submenu 2</a></li>
-                </ul>
-              </details>
-            </li>
-            <li><a>Material</a></li>
-            <li><a>About</a></li>
-          </ul>
-        </div>
-        <div class="navbar-end">
-          <a class="btn">Contact</a>
-        </div>
-      </div>
-      <div
-      class="hero"
-     >
-      <div class="hero-overlay"></div>
-      <div className="hero-content">
-        <div>
-          <h1 >"Style That Fits Your Budget."</h1>
-          <p>
-          Satisfy Your Style Without Breaking The Bank
-          </p>
-          <button>Get Started</button>
-        </div>
-      </div>
-    </div>
-    <div>
-        <div>
-        <h1>Your ultimate destination for all things interiors!</h1>
-        <p>Whether it's complete interior solutions, renovations, or modular designs, we've got everything you need for your home or office. From a diverse range of furniture to stunning décor, we're here to support you every step of the way—from start to finish.</p>
-        </div>
-        <div>
-            <div class="card">
-          <div class="card-body">
-            <span class="badge">{props.c1}</span>
-            <div>
-              <h2>Name</h2>
-              <span >Range</span>
-            </div>
-          <figure>
-            <img
-              src="https://th.bing.com/th/id/OIP.lVO6pah46kCuIazZrOFiagHaE8?w=226&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7"
-              alt="range image" />
-            </figure>
-        
+  <div class="container">
+    <nav>
+        <div class="bartag">
+            <div class="logo">
+                <p>Design your Home</p>
+            </div> 
             <ul>
-              <li>
-                <span>title 1</span>
-              </li>
-              <li>
-                <span>title2</span>
-              </li>
-              <li>
-                <span>title3</span>
-              </li>
-              
+                <li class="active"><a href="index.html">HOME</a></li>
+                <li><a href="#">DESIGNING IDEAS</a></li>
+                <li><a href="contact.html">CONTACT US</a></li>
+                <li><a href="#">ABOUT US</a></li>
+                <li><a href="#">MATERIALS</a></li>
             </ul>
-            <div>
-              <button>Price Calculated</button>
+            <div class="header_button">
+                <button><a href="signup.html">Log In</a></button>
+                <button>Sign Up</button>
             </div>
-          </div>
-        </div>
             </div>
-            <div >
-                <h1>Material Provide</h1>
-                <p>We will provide you all kinds of materials required for making your dream houme of good quality</p>
-                </div>
-                <div class="card">
-                    <figure>
-                      <img
-                        src="https://th.bing.com/th/id/OIP.lVO6pah46kCuIazZrOFiagHaE8?w=226&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7"
-                        alt="img"
-                        />
-                    </figure>
-                    <div class="card-body">
-                      <h2 class="card-title">title</h2>
-                      <div class="card-actions">
-                        <button > Get </button>
-                      </div>
-                    </div>
-                  </div>
-                  <div>
-                    <div >
-                    <h1 >Work Provided by us for home interior designing</h1>
-                    <p >Give us your requirement we will give you full design</p>
-                    </div>
-                    </div>
-                    <div>
-                        <img src="https://th.bing.com/th/id/OIP.lVO6pah46kCuIazZrOFiagHaE8?w=226&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7" alt="" />
-                        <div>
-                            <h1>Get Your Dream Home just by clicking a Button</h1>
-                            <button class="btn">Price Calculation</button>
-                            </div>
-                            <footer class="footer">
-                                <aside>
-                                  <svg
-                                    width="50"
-                                    height="50"
-                                    viewBox="0 0 24 24"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fillRule="evenodd"
-                                    clipRule="evenodd"
-                                    className="inline-block fill-current">
-                                    <path
-                                      d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path>
-                                  </svg>
-                                  <p>
-                                    ACME Industries Ltd.
-                                    <br />
-                                    Providing reliable tech since 1992
-                                  </p>
-                                  <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
-                                </aside>
-                                <nav>
-                                  <div>
-                                    <a>
-                                      <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"
-                                        className="fill-current">
-                                        <path
-                                          d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
-                                      </svg>
-                                    </a>
-                                    <a>
-                                      <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"
-                                        className="fill-current">
-                                        <path
-                                          d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
-                                      </svg>
-                                    </a>
-                                    <a>
-                                      <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="24"
-                                        height="24"
-                                        viewBox="0 0 24 24"
-                                        className="fill-current">
-                                        <path
-                                          d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
-                                      </svg>
-                                    </a>
-                                  </div>
-                                </nav>
-                              </footer>
+    </nav>
+    <hr>
+    <section  id ="main">
+    <H1><i>"Style That Fits Your Budget."</i></H1>
+    <p> Satisfy Your Style Without Breaking The Bank</p>
+    <div class="main2">
+      <button>Get Started</button>
+      </div>
+    </section>
+</div>
+<div class="interior">
+<h1>Your ultimate destination for all things interiors!</h1>
+<p>Whether it's complete interior solutions, renovations, or modular designs, we've got everything you need for your home or office. From a diverse range of furniture to stunning décor, we're here to support you every step of the way—from start to finish.</p>
+</div>
+<div class="main3">
+ 
+<section id="standard">
+   <button> <h4>Essential</h4></button>
+</section>
+<section id="premium">
+    <button><H4>PREMIUM</H4></button>
+</section>
+<section id="luxury">
+  <button>  <h4>LUXURY</h4></button>
+</section>
+</div>
+<div class="carousel">
+<h2>WHY DESIGN YOUR HOME IS FOR YOU:</h2>
+<ul>
+    <li>Comprehensive Budget Planning Tools</li>
+    <li>Curated Resources for Quality Materials</li>
+    <li>24/7 service and support</li>
+    <li> Complete confidentiality</li>
+    <li>End-to-End Support</li>
+    <li>No brokers</li>
+    <li>You have a single point of contact for your service and loyalty discounts avaliable for regular customers</li>
+</ul>
+</div>
+<div class="CONTECT">
+<section>
+<h1>Design your Home</h1>
+<P>Design Your Home  Service - Chandigarh</P>
+<p>Design your house your way</p>
+</section>
+<section>
+<p>Contact Us at:</p>
+<p>+919103142374</p>
+<button id="c1" ><img src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-whatsapp-icon-png-image_3584844.jpg" target="_blank" width="26px" height="26px" alt=""></button>
+<button id="c2"><img src="data:image/jpeg;base64,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" width="26px" height="26px" alt=""></button>
+</section>
+<section>
+<p>Our address</p>
+<p>sector-17, Chandigarh</p>
+</section> 
+</div>
+<hr>
+<footer>
+    &copy;2024 All rights reserved<br>Privacy Policy <br>Developed by Aman Badyal
+</footer>
 </body>
 </html>
