@@ -1,7 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow',  ;
+    background-color: radial-gradint(#fff, #ffd6d6);
  }
  
  .bartag{
@@ -27,14 +28,29 @@
  .bartag ul li{
    margin: 10px;
  }
+
  .container{
    background-image: url(https://th.bing.com/th/id/OIP.phuA_XgMCmOEGf4aVw5tZAHaEJ?w=314&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7);
    background-size: cover;
-   height: 100%;
+   height: 550px;
    width: 100%;
    border-radius: 10px;
-
+   animation: image_change 10s linear 2s infinite;
  }
+ @keyframes image_change {
+  0%{
+    background-image: url("https://th.bing.com/th/id/OIP.phuA_XgMCmOEGf4aVw5tZAHaEJ?w=314&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7");
+  }
+  25%{
+    background-image: url("https://th.bing.com/th/id/OIP.S1kN-NWszAgktbgtpp4q-wHaE7?w=255&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7");
+  }
+  50%{
+    background-image: url("https://th.bing.com/th/id/OIP.u9osK_CtPORADKoEk6uvRgHaEn?w=249&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7");
+  }
+  100%{
+    background-image: url("https://th.bing.com/th/id/OIP.OyKYiRjY3HWFyDOpcaYxEwHaEe?w=306&h=185&c=7&r=0&o=5&dpr=1.6&pid=1.7");
+  }
+}
  .bartag ul li{
    list-style: none;
    display: inline-block;
@@ -82,11 +98,11 @@ nav ul li.active a {
 #main{
   text-align: center;
   padding: 250px 100px;
-  color:rgb(12, 54, 47);
+  color:#1d2738;
   
 }
 #main h1{
-    color: #000;
+    color:#3b2323;
     font-size:40px;
 }
 .main2 button{
@@ -100,7 +116,10 @@ nav ul li.active a {
 }
 .main2{
 
- margin-top: 17px;
+ margin: 17px;
+}
+.interior{
+  padding: 20px;
 }
 #my-button{
   background-color:white;
@@ -108,6 +127,7 @@ nav ul li.active a {
 }
 .main3{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   padding-top: 5%;
   padding-bottom: 5%;
@@ -126,16 +146,16 @@ nav ul li.active a {
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: transform 0.3s ease;
+  overflow: hidden;
 }
 #standard button{
   background-color: #fff5;
   border:none;
   cursor:pointer;
-  padding-left: 41.2%;
-  padding-right: 41.2%;
+  width: 100%;
   padding-top: 2%;
   padding-bottom: 2%;
-  border-radius: 10px;
+  border-radius: 0px 0px 10px 10px;
 }
 #premium{
   background-image: url(https://th.bing.com/th/id/OIP.AwTxno4ghtZN-401JT9vrQHaE8?w=228&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7);
@@ -146,16 +166,16 @@ nav ul li.active a {
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: transform 0.3s ease;
+  overflow: hidden;
 }
 #premium button{
   background-color: #fff5;
   border:none;
   cursor:pointer;
-  padding-left: 41.8%;
-  padding-right: 41.8%;
+  width: 100%;
   padding-top: 2%;
   padding-bottom: 2%;
-  border-radius: 10px;
+  border-radius: 0px 0px 10px 10px;
 }
 #luxury{
   background-image: url(https://th.bing.com/th/id/OIP.3SKKzPj42KoaSEKP5o7fZQHaFI?w=251&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7);
@@ -165,6 +185,7 @@ nav ul li.active a {
   background-position: center;
   border-radius: 10px;
   text-align: center;
+  overflow: hidden;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: transform 0.3s ease;
 }
@@ -172,15 +193,16 @@ nav ul li.active a {
   background-color: #fff5;
   border:none;
   cursor:pointer;
-  padding-left: 43.5%;
-  padding-right: 43.5%;
+  width: 100%;
   padding-top: 2%;
   padding-bottom: 2%;
-  border-radius: 10px;
+  border-radius: 0px 0px 10px 10px;
+  
 }
 .main3  :hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
+
 .carousel{
   padding-left: 1%;
 }
@@ -188,20 +210,33 @@ nav ul li.active a {
   background-color: whitesmoke;
   padding: 3%;
   border-radius: 10px;
-  font-size: larger;
   list-style-type: none;
   text-align: center;
   color: #353839;
-  font-size: 14px;
+  font-size: 18px;
+}
+.design{
+  padding: 50px;
+  background-color:#ffd6d6;
+  text-align: center;
+}
+.design ul{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  list-style: none;
+}
+.design ul img{
+  width: 280px;
+  height: 200px;
 }
 .CONTECT{
   display: flex;
   justify-content: space-around;
   padding-top: 5%;
   padding-bottom: 5%;
-  background-color: rgb(252, 241, 227);
+  background-color: #b9bfcb;
   color: #353839;
-  border-radius: 10px;
 }
 .CONTECT button{
   width: 30px;
@@ -215,14 +250,26 @@ nav ul li.active a {
 .CONTECT button img{
   border-radius: 100%;
 }
+.price{
+  text-align: center;
+  background-color: #d7deec;
+  padding: 40px;
+}
+.price button{
+  border: none;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 20px;
+  background-color: #1d2738;
+  color: #d7deec;
+}
 footer{
   text-align: center;
   background-color: #fff5;
-  padding-top: 5%;
   padding-bottom: 1%;
 }
 .contact-head{
-  background-image: url(https://th.bing.com/th/id/OIP.KMBrPUXXuQo48j_9O5e_CAHaD5?w=325&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7);
+  background-image: url("https://th.bing.com/th/id/OIP.KMBrPUXXuQo48j_9O5e_CAHaD5?w=325&h=180&c=7&r=0&o=5&dpr=1.6&pid=1.7");
   padding-top: 25%;
   padding-bottom: 15%;
   font-size: 18px;
@@ -230,8 +277,10 @@ footer{
   background-size: cover;
   border-radius: 10px;
   background-position: center;
-  color:rgb(1, 7, 12)
+  color:rgb(1, 7, 12);
+  
 }
+
 .contact-head h1{
   margin-right: 70%;
 }
@@ -280,7 +329,7 @@ form{
     z-index: -1;
    
 }
-form *{
+form {
     font-family: 'Poppins',sans-serif;
     background-color: #080710;
     color: #ffffff;
@@ -307,11 +356,12 @@ input{
     height: 50px;
     width: 100%;
     background-color: rgba(255,255,255,0.07);
-    border-radius: 3px;
     padding: 0 10px;
     margin-top: 8px;
     font-size: 14px;
     font-weight: 300;
+    border: none;
+    border-radius: 10px;
 }
 
 .btn{
@@ -324,6 +374,7 @@ input{
     font-weight: 600;
     border-radius: 5px;
     cursor: pointer;
+    border: none;
 }
 .social{
   margin-top: 30px;
@@ -350,4 +401,122 @@ input{
 .Signup{
   height: 700px;
   margin-top: 60px;
+}
+.Material{
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 8px;
+  background-color:#eaf0fb;
+  transition: transform 0.5s ease;
+  margin-bottom: 100px;
+}
+.Material:hover{
+  transform: scale(1.05);
+}
+.Material img{
+  border-radius: 8px;
+}
+.materials{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.Material button{
+  padding: 15px;
+  border: none;
+  border-radius: 50px;
+  margin: 20px;
+  background-color: #353839;
+  color: #fff;
+  cursor: pointer;
+}
+.mhead{
+  text-align: center;
+  margin: 20px;
+  margin-top: 100px;
+}
+.slider img{
+  width: 100%;
+  height: 600px;
+  border-radius: 20px;
+  flex-shrink: 0;
+  display: block;
+}
+.slider{
+  width: 100%;
+  
+  display: flex;
+  animation: slider 30s infinite alternate-reverse 5s ease-in-out;
+}
+.slide{
+  overflow: hidden;
+  margin: 50px;
+  padding: 100px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  text-align: center;
+  color:#3b2323;
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+.slide h1{
+  padding: 20px;
+}
+
+@keyframes slider {
+    0%{transform: translate(0);}
+    10%{transform: translate(-100%);}
+    20%{transform: translate(-200%);}
+    30%{transform: translate(-300%);}
+    40%{transform: translate(-400%);}
+    50%{transform: translate(-500%);}
+    60%{transform: translate(-600%);}
+    70%{transform: translate(-700%);}
+    80%{transform: translate(-800%);}
+    90%{transform: translate(-900%);}
+    
+}
+.idea{
+  padding: 100px 50px 50px 50px;
+  background-image: url("https://th.bing.com/th/id/OIP.1Rn9_PhRuubLzM7xQA-O1QHaE8?w=306&h=204&c=7&r=0&o=5&dpr=1.6&pid=1.7");
+  background-size: cover;
+  color: #353839;
+  border-radius: 0 0 10px 10px;
+  animation: image_change 10s linear 2s infinite;
+}
+.designing{
+  padding: 20px;
+  background-color:#d7deec;
+  border-radius: 10px;
+}
+.designing ul{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  
+}
+.designing ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+.designing ul li a{
+  text-decoration: none;
+  color:#070504;
+  padding: 5px;
+  font-size: 12px;
+}
+.designing ul li a:hover{
+  color: aliceblue;
+  background-color: #353839;
+  border-radius: 5px;
+}
+.Bedroom{
+  margin-left: 20px;
+}
+#ba{
+  color: aliceblue;
+  background-color: #353839;
+  border-radius: 5px;
 }
